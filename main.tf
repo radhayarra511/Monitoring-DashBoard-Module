@@ -1,6 +1,7 @@
 resource "google_monitoring_dashboard" "dashboard" {
   project_id   = var.project_id
   dashboard_name = var.dashboard_name
+  dashboard_json = var.dashboard_json
 
   chart {
     name = "Agent"
