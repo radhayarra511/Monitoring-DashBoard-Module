@@ -1,6 +1,6 @@
 resource "google_monitoring_dashboard" "dashboard" {
   project_id   = var.project_id
-  dashboard_name = "GCP DashBoard- terraform created"
+  dashboard_name = var.dashboard_name
 
   chart {
     name = "Agent"
